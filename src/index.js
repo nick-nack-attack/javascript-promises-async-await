@@ -21,18 +21,16 @@ function getBooksOrMovies() {
 const getBooksAndMoviesPromise = getBooksAndMovies();
 
 getBooksAndMoviesPromise
-    .then(results => console.log(
-        'getBooksAndMoviesPromise',
-        results
-    ))
+    .then(results => {
+        console.log('getBooksAndMoviesPromise', results)
+    })
 
 const getBooksOrMoviesPromise = getBooksOrMovies();
 
 getBooksOrMoviesPromise
-    .then(results => console.log(
-        'getBooksOrMoviesPromise',
-        results
-    ))
+    .then(results => {
+        console.log('getBooksOrMoviesPromise', results)
+    })
 
 /*
 
