@@ -4,14 +4,14 @@ export function fetchWithTimeout(delay) {
 
 export function fetchMovies() {
     return fetch("./data/movies.json")
-        .then(res => res.json())
+        .then(response => response.json())
         .then(movies => movies)
-        .catch(err => console.log(err))
+        .catch(error => console.log(error));
 }
 
 export function fetchBooks() {
     return fetch("./data/books.json")
-        .then(res => res.json())
+        .then(response => response.json())
         .then(books => books)
-        .catch(err => console.log(err))
+        .catch(error => console.log(error));
 }

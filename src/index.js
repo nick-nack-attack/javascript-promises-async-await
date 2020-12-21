@@ -19,13 +19,14 @@ function getBooksOrMovies() {
 }
 
 const getBooksAndMoviesPromise = getBooksAndMovies();
-const getBooksOrMoviesPromise = getBooksOrMovies();
 
 getBooksAndMoviesPromise
     .then(results => console.log(
         'getBooksAndMoviesPromise',
         results
     ))
+
+const getBooksOrMoviesPromise = getBooksOrMovies();
 
 getBooksOrMoviesPromise
     .then(results => console.log(
